@@ -1,0 +1,93 @@
+/*OSMOS*/
+
+@font-face {
+    font-family:astrobia;
+    src:url(/fonts/Astrobia\ Regular.ttf);
+}
+.osmos
+{
+    font-family:IBM Plex Sans;
+}
+.osmos-bg-img
+{
+    background: #15151e url("../img/stars.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.osmos-bg-dark
+{
+    background:#15151e;
+}
+.osmos-title h1
+{
+    color:#adbed9;
+    font-family:IBM Plex Sans;
+    font-size:5rem;
+    font-weight:400;
+    text-align: center;
+    -webkit-text-stroke: 1px #15151e;
+}
+.osmos-title h3
+{
+    color:#cfcfeb;
+    font-family:IBM Plex Sans;
+    font-weight:300;
+    text-align: center;
+}
+.intro-tiles
+{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: IBM Plex Sans;
+}
+.tile-bg
+{
+    background:#ffffff;
+}
+.tile-bg h4 {
+    font-family: IBM Plex Sans;
+    background:transparent;
+}
+
+.osmos-intro
+{
+    background:#ffffff;
+    padding-top:30px;
+    padding-bottom:20px;
+
+    -webkit-box-shadow: inset 0px 10px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 10px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 10px 20px -8px rgba(0,0,0,0.75);
+}
+.osmos-intro .container{background:transparent;max-width:800px !important;}
+.osmos-intro div h3
+{
+    color:#525966;
+    font-family: IBM Plex Sans;
+    font-weight:300;
+    background:transparent;
+    text-align: center;
+    font-size:16pt;
+}
+
+.osmos-heading-light
+{
+    color:#adbed9;
+    font-family:IBM Plex Sans;
+    font-weight:400;
+}
+.osmos-text-light
+{
+    color:#adbed9;
+    font-weight:300;
+    font-size:13pt;
+}
+.osmos-subheading-light
+{
+    color:#adbed9;
+    font-family:IBM Plex Sans;
+    font-weight:400;
+    font-size:18pt;
+    margin-top:30px;
+}
