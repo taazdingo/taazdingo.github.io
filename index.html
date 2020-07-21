@@ -14,71 +14,62 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Arbutus+Slab&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=IBM+Plex+Serif:wght@300;400;500;600&family=Life+Savers:wght@400;700;800&family=Autour+One&family=Bellota:ital,wght@0,300;0,400;0,700;1,400&family=Milonga&family=Press+Start+2P&family=Salsa&family=Yeon+Sung&family=Arbutus+Slab&family=Averia+Gruesa+Libre&family=Averia+Libre:wght@300;400;700&family=Chelsea+Market&family=Concert+One&display=swap"
         rel="stylesheet">
+    <script src="https://use.fontawesome.com/9c046ca5d3.js"></script>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-        <button class="navbar-toggler hidden-lg" type="button" data-toggle="collapse" data-target="#navbarContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-        <div class="navbar-collapse collapse" id="navbarContent">
-            <!-- collapse navbar-collapse -->
-            <ul class="navbar-nav mr-auto ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">DD hover</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">item</a>
-                        <a class="dropdown-item" href="#">item</a>
-                        <a class="dropdown-item" href="#">item</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    
 
     <div class="background-container">
 
 
         <div class="container-fluid full-height section-intro-bg">
-            <div class="home-header">
-
+            <div class="home-header hidden-md">
+                <a href="about">
+                    <div class="main-nav-btn">
+                        About me
+                    </div>
+                </a>
+                <a target="_blank" href="others/Resume_Rahul.pdf">
+                    <div class="main-nav-btn">
+                        CV
+                    </div>
+                </a>
+                <a href="#projects">
+                    <div class="main-nav-btn">
+                        Projects
+                    </div>
+                </a>
+                <a href="#contact">
+                    <div class="main-nav-btn">
+                        Contact
+                    </div>
+                </a>
             </div>
             <div class="container-fluid row margin-half">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12" style="display:table-cell;vertical-align:middle;">
                     <img class="logo-large" src="img/owl_basic_glasses2.png" />
                 </div>
-                <div class="intro-container col-lg-9 col-md-8 col-sm-8 col-xs-12">
-                    <h1>Hello there! My name is Rahul,</h1>
-                    <h4 class="">Design graduate student at NID. I design games</h4>
+                <div class="intro-container col-lg-9 col-md-8 col-sm-8 col-xs-12 pt-3">
+                    <h1>Hello there! My name is <span style="color:#fcb929;">Rahul Pegallapati</span></h1>
+                    <h4>Design graduate student at NID. I design games</h4>
                     <!-- <h6 class="font-weight-lighter" class="font-weight-lighter">M.Des graduate, National Institute of
                         Design</h6> -->
                 </div>
             </div>
         </div>
 
-        <div class="section-gallery container-fluid py-5">
+        <div class="section-gallery container-fluid py-4" id="projects">
             <h2>Game Design</h2>
             <div class="row pf-row px-2">
                 <!-- Each game comes into one of these these pf-item divs -->
 
 
                 <!--OSMOS-->
-                <div class="container-fluid pf-item col-md-2 col-sm-12"></div>
+                <div class="container-fluid col-md-2 hidden-sm"></div>
                 <div class="container-fluid pf-item col-md-4 col-sm-12">
                     <div class="pf-item-trigger">
                         <div class="pf-item-veil"></div>
@@ -105,7 +96,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="container-fluid pf-item col-md-2 col-sm-12"></div>
+                <div class="container-fluid col-md-2 hidden-sm"></div>
 
                 <!-- <div class="container-fluid pf-item col-md-4 col-sm-12">
                     <div class="pf-item-trigger">
@@ -122,33 +113,32 @@
                 </div> -->
             </div>
 
-
-
-
         </div>
-
-        <!-- <div class="section">
-            <div class="container-fluid py-5">
-                <div class="row">
-                    <div class="container-fluid pf-item col-md-4 col-sm-12">
-                        <div class="pf-item-desc">
-                            <h4 class="mb-5">Blah</h4>
-                            <p>asjdaosdj
-                                asdoasod
-                                aslfkjnasjfnas
-                            </p>
-                        </div>
-                        <div class="pf-item-veil">
-                        </div>
-                        <img class="pf-item-img" src="img/1_MI686k5sDQrISBM6L8pf5A.jpeg" alt="Osmos">
+        <div class="container-fluid section-contact pt-5" id="contact">
+            <h2>Get in touch!</h2>
+            <div class="contact-form-container">
+                <form method="POST">
+                    <!--action="https://formspree.io/xqkywadq"-->
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="replyto">
+                    </div>
+                    <div class="form-group">
+                        <label for="message1">Message</label>
+                        <textarea class="form-control" id="message1" name="message"></textarea>
                     </div>
 
-                    <div class="container-fluid pf-item col-md-4 col-sm-12">hi</div>
+                    <!-- your other form fields go here -->
 
-                    <div class="container-fluid pf-item col-md-4 col-sm-12">hi</div>
-                </div>
+                    <button class="btn btn-dark" type="submit" id="submit">Send</button>
+
+                </form>
             </div>
-        </div> -->
+        </div>
 
     </div>
 

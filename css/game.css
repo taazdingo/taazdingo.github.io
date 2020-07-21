@@ -174,22 +174,38 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
       width:100%;
       height:80vh;
   }
-
+.home-button
+{
+    position:absolute;
+    top:2rem;
+    left:2rem;
+    text-decoration:none;
+    color:#cbcbcb77;
+    font-size:18pt;
+    border:2px solid #cbcbcb66;
+    padding:5px 13px;
+    border-radius:40px;
+}
+.home-button:hover
+{
+    color:#cbcbcbbb;
+}
 
   /*FBWPT*/
   
   .fbwpt
   {
-      background:#38655d;
+      background:#245c6d;
       
   }
   .fbwpt h3{   
-      color:#88c426;
-      font-family:Arbutus Slab;
+      color:#b9b026;
+      font-family:IBM Plex Sans;
   }
   .fbwpt-text
   {
-      color:#519548;
+      color:#d2dee0;
       font-family:Life Savers;
-      font-weight:bold;
+      font-weight:400;
+      font-size:15pt;
   }

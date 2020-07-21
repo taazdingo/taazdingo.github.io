@@ -9,15 +9,37 @@
     vertical-align: middle;
     width:100vw;;
 }
-
-.section-gallery {
-    height:100vh;
+.home-header
+{
+    display:flex;
+    position:absolute;
+    bottom:20px;
+    left:0px;
+    justify-content: center;
+    width:100%;
+    padding:15px;
+    flex-wrap: wrap;
 }
-.section-gallery h2 {
-    font-size: 3rem;
+.home-header a{
+    text-decoration:none;
+    color:#fefceeaa;
     text-align: center;
-    font-family: Acme;
-    color:#6e6461;
+    font-family:Salsa;
+    margin-bottom:10px;
+}
+.main-nav-btn
+{
+    
+    min-width:100px;
+    border:3px solid #fefceeaa;
+    border-radius: 15px;
+    margin-right:20px;
+    padding:10px 10px;
+}
+/**/
+h2{
+    text-align:center;
+    font-family:Salsa;
 }
 
 .logo-large
@@ -27,23 +49,17 @@
     display: block;
     margin-left:auto;
     margin-right:auto;
-    margin-top:1.5em;
+    position: relative;
+    bottom:30px;
 }
 
-.intro-container h1
-{
-    word-wrap: normal;
-    margin-top:2.5rem;
-    margin-bottom:1.5rem;
-    font-family:Arbutus Slab;
-}
-.intro-container h4,h6
+
+.intro-container h1,h4,h6
 {
     word-wrap: normal;
     margin-bottom:1.5rem;
-    font-family:Arbutus Slab;
+    font-family:Chelsea Market;
 }
-
 
 .pf-row {
     /* margin-top:calc(50vh - 200px); */
@@ -139,7 +155,7 @@
 }
 .navbar-custom .navbar-toggler
 {
-    border:2px solid #201a16;
+    border:none;
     background:#8e857b;
 }
 @media only screen and (max-width:991px)
@@ -153,6 +169,8 @@
         margin-right:auto;
         width:auto;
     }
+    
+    
 }
 
 @media only screen and (min-width:992px)
@@ -215,16 +233,60 @@
 
 @media only screen and (max-width:767px)
 {
-    .para-half
-{
-    width:100%;
-    display: block;
-}
-.img-inline
-{
-    display:block;
-    width:100%;
-}
+            .para-half
+        {
+            width:100%;
+            display: block;
+        }
+        .img-inline
+        {
+            display:block;
+            width:100%;
+        }
+        .intro-container h1
+        {
+            font-size:1.5rem;
+            text-align: center;
+        }
+        .intro-container h4
+        {
+            font-size:1rem;
+            text-align: center;
+        }
+
+        .home-header
+        {
+            bottom:0px;
+            padding:0px;
+            flex-wrap: nowrap;
+        }
+        .home-header a{
+            text-decoration:none;
+            color:#fefceeaa;
+            text-align: center;
+            font-family:Salsa;
+            margin-bottom:10px;
+        }
+        .main-nav-btn
+        {
+            
+            min-width:0px;
+            border:none;
+            border-radius: 15px;
+            margin-right:10px;
+            margin-left:10px;
+            padding:0px;
+        }
+        .margin-half{
+            position:relative;
+            bottom:50px!important;
+        }
+        .logo-large
+        {
+            position: relative;
+            bottom:0px;
+        }
+
 }
 .custom-container
 {
@@ -242,7 +304,27 @@
 }
 .margin-half
 {
-    max-width:1200px;
+    
     margin-left:auto;
     margin-right:auto;
+    position:relative;
+    bottom:30px;
+}
+
+
+.section-contact
+{
+    background:#565050;
+}
+.contact-form-container
+{
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:2rem;
+}
+.contact-form-container
+{
+    font-family:Salsa;
+    font-size:1.25rem;
 }
