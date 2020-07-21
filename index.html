@@ -13,26 +13,31 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Arbutus+Slab&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <button class="navbar-toggler hidden-lg" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-        
+        </button>
+
 
         <div class="navbar-collapse collapse" id="navbarContent">
+            <!-- collapse navbar-collapse -->
             <ul class="navbar-nav mr-auto ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link disabled" href="#">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">CV</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Link D</a>
+                    <a class="nav-link" href="#">Projects</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#">DD hover</a>
@@ -44,21 +49,80 @@
                 </li>
             </ul>
         </div>
-    </nav> -->
+    </nav>
 
     <div class="background-container">
 
-        <div class="container-fluid section-intro-bg">
-            <div class="container py-5 px-5 section-intro">
-                <div class="logo-container">
+
+        <div class="container-fluid full-height section-intro-bg">
+            <div class="home-header">
+
+            </div>
+            <div class="container-fluid row margin-half">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12" style="display:table-cell;vertical-align:middle;">
                     <img class="logo-large" src="img/owl_basic_glasses2.png" />
                 </div>
-                <div class="intro-container">
-                    <h1>Welcome! My name is Rahul</h1>
-                    <h6 class="">This site is under construction</h6>
-                    
+                <div class="intro-container col-lg-9 col-md-8 col-sm-8 col-xs-12">
+                    <h1>Hello there! My name is Rahul,</h1>
+                    <h4 class="">Design graduate student at NID. I design games</h4>
+                    <!-- <h6 class="font-weight-lighter" class="font-weight-lighter">M.Des graduate, National Institute of
+                        Design</h6> -->
                 </div>
             </div>
+        </div>
+
+        <div class="section-gallery container-fluid py-5">
+            <h2>Game Design</h2>
+            <div class="row pf-row px-2">
+                <!-- Each game comes into one of these these pf-item divs -->
+
+
+                <!--OSMOS-->
+                <div class="container-fluid pf-item col-md-4 col-sm-12">
+                    <div class="pf-item-trigger">
+                        <div class="pf-item-veil"></div>
+                        <div class="pf-item-desc">
+                            <h4>An in-orbit satellite repair simulation game</h4>
+                        </div>
+                        <img class="pf-item-img" src="img/osmos_banner.jpg" alt="Osmos">
+                        <span class="clickable">
+                            <a href="osmos.html" target="_self"></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!--Fantastic Beasts and Where to Plant Them-->
+                <div class="container-fluid pf-item col-md-4 col-sm-12">
+                    <div class="pf-item-trigger">
+                        <div class="pf-item-veil"></div>
+                        <div class="pf-item-desc">
+                            <h4>4-player co-op game where players need to work together to feed the hungry boss</h4>
+                        </div>
+                        <img class="pf-item-img" src="img/fbwpt_banner3.png" alt="Osmos">
+                        <span class="clickable">
+                            <a href="fbwpt.html" target="_self"></a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="container-fluid pf-item col-md-4 col-sm-12">
+                    <div class="pf-item-trigger">
+                        <div class="pf-item-veil"></div>
+                        <div class="pf-item-desc">
+                            <h4>OSMOS is a is a OSMOS is a OSMOS is a OSMOS is a OSMOS is a OSMOS is a OSMOS is a
+                                OSMOS is a </h4>
+                        </div>
+                        <img class="pf-item-img" src="img/fbwpt_banner.png" alt="Osmos">
+                        <span class="clickable">
+                            <a href="osmos.html" target="_self"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
 
         <!-- <div class="section">
