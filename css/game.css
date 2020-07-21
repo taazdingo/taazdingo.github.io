@@ -151,7 +151,7 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 {
     border-top:1px solid rgba(0, 0, 0, 0) !important;
 }
-#myBtn {
+.osmos-gotop {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -164,9 +164,32 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 10px;
-    font-size: 18px; /* Increase font size */
+    font-size: 18px; /* Increase if using other icons */
   }
   
-  #myBtn:hover {
+  .osmos-gotop:hover {
     background-color: #83a2a077;
+  }
+  .video-responsive{
+      width:100%;
+      height:80vh;
+  }
+
+
+  /*FBWPT*/
+  
+  .fbwpt
+  {
+      background:#38655d;
+      
+  }
+  .fbwpt h3{   
+      color:#88c426;
+      font-family:Arbutus Slab;
+  }
+  .fbwpt-text
+  {
+      color:#519548;
+      font-family:Life Savers;
+      font-weight:bold;
   }
