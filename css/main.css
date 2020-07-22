@@ -1,6 +1,14 @@
 /* .background-container{
     background:#000 url("../img/forest_tile3.png") repeat;
 } */
+@keyframes fadeInOnLoad {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ @keyframes flyTopOnLoad {
+    0% {opacity:0;bottom:-100px;}
+    100% {opacity:1;bottom:20px}
+ }
 .section-intro-bg
 {
     background:#6e6461;
@@ -13,33 +21,50 @@
 {
     display:flex;
     position:absolute;
-    bottom:20px;
+    bottom:-100px;
+    opacity:0;
     left:0px;
     justify-content: center;
     width:100%;
     padding:15px;
     flex-wrap: wrap;
+    animation:flyTopOnLoad 700ms ease-in-out 2000ms forwards;
 }
 .home-header a{
     text-decoration:none;
-    color:#fefceeaa;
+    color:#fefceedd;
     text-align: center;
-    font-family:Salsa;
+    font-family:Chelsea Market;
     margin-bottom:10px;
 }
 .main-nav-btn
 {
     
     min-width:100px;
-    border:3px solid #fefceeaa;
+    border:3px solid #fefcee44;
     border-radius: 15px;
     margin-right:20px;
     padding:10px 10px;
 }
-/**/
+/*IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400
+      Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700
+      IBM+Plex+Serif:wght@300;400;500;600
+      Life+Savers:wght@400;700;800
+      Autour+One
+      Bellota:ital,wght@0,300;0,400;0,700;1,400
+      Milonga
+      Press+Start+2P
+      Salsa
+      Yeon+Sung
+      Arbutus+Slab
+      Averia+Gruesa+Libre
+      Averia+Libre:wght@300;400;700
+      Chelsea+Market
+      Concert+One*/
 h2{
     text-align:center;
-    font-family:Salsa;
+    font-family:Chelsea Market;
+    font-size:2.25rem;
 }
 
 .logo-large
@@ -53,17 +78,43 @@ h2{
     bottom:30px;
 }
 
-
+.owl-container
+{
+    opacity:0;
+    animation:fadeInOnLoad 800ms ease-in-out 0ms forwards;
+}
 .intro-container h1,h4,h6
 {
     word-wrap: normal;
     margin-bottom:1.5rem;
     font-family:Chelsea Market;
 }
+.intro-container h1
+{
+    opacity:0;
+    animation:fadeInOnLoad 500ms ease-in-out 400ms forwards;
+}
+.intro-container h4 .delay-text-0
+{
+    opacity:0;
+    animation:fadeInOnLoad 500ms ease-in-out 800ms forwards;
+}
+.intro-container h4 .delay-text
+{
+    opacity:0;
+    animation:fadeInOnLoad 500ms ease-in-out 1200ms forwards;
+}
+.section-gallery{
+    background:#af977e;
+}
+.section-gallery h2{
+    color:#251c1b;
+}
 
 .pf-row {
     /* margin-top:calc(50vh - 200px); */
     /*makes the gallery section start from half way. remove once title and second row are added*/
+    padding:1.5rem;
     margin-top:0;
 }
 
@@ -316,6 +367,25 @@ h2{
 {
     background:#565050;
 }
+.section-contact h2{
+    color:#fefcee;
+}
+.section-contact h3{
+    /* color:#fcb929; */
+    color:#fefcee;
+    font-family:Salsa;
+    text-align: center;
+    font-size:1.5rem;
+}
+.contact-card h3 a
+{
+    color:inherit;
+    text-decoration:none;
+}
+.contact-card h3
+{
+    margin-bottom:0.75rem;
+}
 .contact-form-container
 {
     max-width:500px;
@@ -327,4 +397,34 @@ h2{
 {
     font-family:Salsa;
     font-size:1.25rem;
+    color:#dad4b3;
+}
+.contact-form-container input,textarea{
+    font-size:1.25rem!important;
+}
+.contact-form-container button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:150px;
+    font-size:1.25rem;
+}
+.contact-form-container .form-control:focus{
+    border-color: #fefcee;
+    box-shadow: 0 0 0 0.2rem rgba(255, 180, 0, 0.35);
+}
+.main-footer
+{
+    min-height:80px;
+    background:#af977e;
+    padding:15px;
+}
+.footer-text
+{
+    font-size:12pt;
+    color:#6c5b48;
+    text-align: center;
+    margin-bottom:0px;
+    font-family:Lato;
+    font-weight:700;
 }

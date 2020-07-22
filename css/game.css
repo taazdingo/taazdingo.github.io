@@ -192,20 +192,35 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 }
 
   /*FBWPT*/
-  
+  /*IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400
+      Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700
+      IBM+Plex+Serif:wght@300;400;500;600
+      Life+Savers:wght@400;700;800
+      Autour+One
+      Bellota:ital,wght@0,300;0,400;0,700;1,400
+      Milonga
+      Press+Start+2P
+      Salsa
+      Yeon+Sung
+      Arbutus+Slab
+      Averia+Gruesa+Libre
+      Averia+Libre:wght@300;400;700
+      Chelsea+Market
+      Concert+One*/
   .fbwpt
   {
-      background:#245c6d;
+      background:#2e4d7c;
       
   }
   .fbwpt h3{   
-      color:#b9b026;
-      font-family:IBM Plex Sans;
+      color:#426eaf;
+      font-family:Averia Gruesa Libre;
+      font-weight:bold;
   }
   .fbwpt-text
   {
-      color:#d2dee0;
-      font-family:Life Savers;
-      font-weight:400;
+      color:#74c298;
+      font-family:Averia Libre;
+      font-weight:300;
       font-size:15pt;
   }
