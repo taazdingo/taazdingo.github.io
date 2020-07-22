@@ -224,3 +224,46 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
       font-weight:300;
       font-size:15pt;
   }
+  .fbwpt-text i.fa{
+    color:#88a796;
+  }
+  .fbwpt-mechanics
+  {
+      display:flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+  }
+.fbwpt-mechanics img{
+      display:block;
+      height:80px;
+      margin-left:auto;
+      margin-right:auto;
+}
+.fbwpt-mechanics h5{
+    color:darkorange;
+    font-weight:700;
+    text-align:center;
+    font-family:Averia Libre;
+}
+.fbwpt-credits
+{
+    display: flex;
+    justify-content: space-around;
+}
+.fbwpt-credits div h3{
+    text-align:center;
+    font-size:3rem;
+    font-family:Averia Libre;
+    font-weight:700;
+}
+.fbwpt-credits div h3:nth-child(2)
+{
+    text-align:center;
+    font-size:1.25rem;
+}
+.fbwpt-credits div h3:nth-child(3)
+{
+    text-align:center;
+    font-size:1.25rem;
+    color:#87a2cb;
+}

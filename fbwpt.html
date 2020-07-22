@@ -18,20 +18,30 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=IBM+Plex+Serif:wght@300;400;500;600&family=Life+Savers:wght@400;700;800&family=Autour+One&family=Bellota:ital,wght@0,300;0,400;0,700;1,400&family=Milonga&family=Press+Start+2P&family=Salsa&family=Yeon+Sung&family=Arbutus+Slab&family=Averia+Gruesa+Libre&family=Averia+Libre:wght@300;400;700&family=Chelsea+Market&family=Concert+One&family=Eater&display=swap"
         rel="stylesheet">
     <script src="https://use.fontawesome.com/9c046ca5d3.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173234110-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173234110-1');
+    </script>
 
 </head>
 
 <body class="fbwpt">
-    <div class="custom-container px-0 pb-5" style="background:black;">
+    <div class="custom-container px-0 pb-5 mb-5" style="background:#112238;">
         <div class="container-fluid px-0 mb-5">
             <img src="img/fbwpt_hero.jpg" style="max-width:100%" />
-
         </div>
+
         <div class="container-fluid px-0">
             <iframe class="video-responsive" src="https://www.youtube.com/embed/VTuHh_Yeii0" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
+
         <div class="container-fluid px-0">
             <div class="custom-container px-0">
                 <h3 class="px-3 pt-3 mt-5">Gameloop</h3>
@@ -39,6 +49,37 @@
                     style="display:block;margin-left:auto;margin-right:auto;">
             </div>
         </div>
+
+        <div class="container-fluid px-0">
+            <div class="custom-container px-0">
+                <h3 class="px-4 mt-5 mb-4">Core Mechanics</h3>
+                <div class="fbwpt-mechanics pb-5">
+                    <div>
+                        <img src="img/run-right.gif" />
+                        <h5>Run</h5>
+                    </div>
+                    <div>
+                        <img src="img/jump-right.gif" />
+                        <h5>Jump</h5>
+                    </div>
+                    <div>
+                        <img src="img/dash.gif" />
+                        <h5>Dash</h5>
+                    </div>
+                    <div>
+                        <img src="img/pickup.gif" />
+                        <h5>Pickup and Throw</h5>
+                    </div>
+                    <div>
+                        <img src="img/pickup_static.png" style="display:inline!important;" /><img src="img/water.gif"
+                            style="display:inline-block!important;height:50px;" /><img src="img/fertilizer.gif"
+                            style="display:inline-block!important;height:50px;" />
+                        <h5>Interact</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container-fluid px-0">
             <div class="custom-container px-0">
                 <h3 class="px-4 mt-5 mb-4">Boss Order System</h3>
@@ -47,25 +88,78 @@
                     <p class="fbwpt-text">
                         The Boss Order system is one of the key elements in the Level Design
                     </p>
-                    <p class="fbwpt-text">
-                        Each level begins with the Boss ordering an initial set of fruits <span style="color:darkorange">(X)</span>.
+                    <p class="fbwpt-text ml-3">
+                        <i class="fa fa-cutlery mr-3 icon-smaller"></i>Each level begins with the Boss ordering an
+                        initial set of fruits <span style="color:darkorange">(X)</span>.
                     </p>
-                    <p class="fbwpt-text">
+                    <p class="fbwpt-text ml-5">
                         Each order has a fixed timer running before which the corresponding fruit must be delivered
                         to the Boss.
                     </p>
-                    <p class="fbwpt-text">
-                        During the course of a level, the Boss orders more fruit. The total number of fruit the Boss orders during an entire level <span style="color:darkorange">(Y)</span> is increased
+                    <p class="fbwpt-text ml-3">
+                        <i class="fa fa-cutlery mr-3 icon-smaller"></i>During the course of a level, the Boss orders
+                        more fruit. The total number of fruit the Boss orders during an entire level <span
+                            style="color:darkorange">(Y)</span> is increased
                         each level.
                     </p>
-                    <p class="fbwpt-text">
-                        Each level may contain only a few, or all types of plants in the game. The number of types of plants in each level <span style="color:darkorange">(Z)</span> is varied for a challenging gameplay.
+                    <p class="fbwpt-text ml-3">
+                        <i class="fa fa-cutlery mr-3 icon-smaller"></i>Each level may contain only a few, or all types
+                        of plants in the game. The number of types of plants in each level <span
+                            style="color:darkorange">(Z)</span> is varied for a challenging gameplay.
                     </p>
                     <p class="fbwpt-text">
-                        These three parameters <span style="color:darkorange">X,Y and Z</span> contribute to the complexity of a particular level.
+                        These parameters <span style="color:darkorange">X,Y and Z</span> contribute to a level's
+                        complexity.
+                    </p>
+                    <hr class="osmos-separator my-4">
+                    <p class="fbwpt-text">
+                        The Boss can switch between three states. <span style="color:darkorange">Idle, Angry and Punishing</span>
+                    </p>
+                    <p class="fbwpt-text">
+                        <span style="color:darkorange"><b>Idle State: </b></span> Boss placed order and is waiting. <img src="img/boss-idle.gif" class="ml-3"/>
+                    </p>
+                    <p class="fbwpt-text">
+                        <span style="color:darkorange"><b>Angry State: </b></span> One order has missed. (Order time elapsed before fruit could be thrown) <img src="img/boss-angry.gif" class="ml-3"/>
+                    </p>
+                    <p class="fbwpt-text">
+                        <span style="color:darkorange"><b>Punishing State: </b></span> Another consecutive order missed. <img src="img/boss-roar.gif" class="ml-3"/>
                     </p>
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid px-0">
+            <div class="custom-container px-0">
+                <h3 class="px-4 my-5">The Team</h3>
+                <div class="fbwpt-credits">
+                    <div>
+                        <h3><i class="fa fa-leaf"></i></h3>
+                        <h3>Plant Systems</h3>
+                        <h3>Amar Ravee</h3>
+                    </div>
+                    <div>
+                        <h3><i class="fa fa-user"></i></h3>
+                        <h3>Player Movement</h3>
+                        <h3>Jonathan Guite</h3>
+                    </div>
+                    <div>
+                        <h3><i class="fa fa-leaf"></i></h3>
+                        <h3>Plant Systems</h3>
+                        <h3>Prajit Nandeshwar</h3>
+                    </div>
+                    <div>
+                        <h3><i class="fa fa-clock-o"></i></h3>
+                        <h3>Order System</h3>
+                        <h3>Rahul Pegallapati</h3>
+                    </div>
+                    <div>
+                        <h3><i class="fa fa-paint-brush"></i></h3>
+                        <h3>Art Direction</h3>
+                        <h3>Vaibhav Kataria</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
