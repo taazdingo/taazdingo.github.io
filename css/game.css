@@ -16,7 +16,7 @@
     }
 .osmos p
 {
-    color:#dcbfaa;
+    
     font-family:Lato;
 }
 
@@ -40,6 +40,7 @@
     font-weight:bold;
     text-align: center;
     -webkit-text-stroke: 1px #10131b;
+    margin-top:2.5rem;
 }
 .osmos-title h3
 {
@@ -95,7 +96,7 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
     color:#09193d;
 }
 #overview h3 {
-    color:#2c3344;
+    color:#89705e;
     font-family:Lato;
     text-align:left;
     max-width:800px;
@@ -136,7 +137,7 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 }
 .osmos-text-light
 {
-    color:#adbed9;
+    color:#dcbfaa;
     font-weight:300;
     font-size:13pt;
 }
@@ -177,8 +178,8 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 .home-button
 {
     position:absolute;
-    top:2rem;
-    left:2rem;
+    top:1rem;
+    left:1.5rem;
     text-decoration:none;
     color:#cbcbcb77;
     font-size:18pt;
