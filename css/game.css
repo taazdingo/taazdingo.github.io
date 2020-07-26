@@ -14,11 +14,7 @@
     src: url(/fonts/OsmosFont/Astrobia\ Bold.otf) format("opentype");
     font-weight:bold;
     }
-.osmos p
-{
-    
-    font-family:Lato;
-}
+
 
 .osmos-bg-img
 {
@@ -77,32 +73,30 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 }
 .osmos-intro .container{
     background:transparent;
-    max-width:900px !important;
+    text-align: center;
+
 }
-.osmos-contents
+.osmos-features
 {
-    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
 }
-.osmos-contents li a
-{
-    text-decoration:none;
-    color:#273148;
-    font-family:Lato;
-    font-size:14pt;
+.osmos-features h5{
+    font-family: Lato;
+    text-align: center;
+    font-weight: 900;
 }
-.osmos-contents li a:hover
-{
-    text-decoration:underline;
-    color:#09193d;
-}
+
 #overview h3 {
     color:#89705e;
     font-family:Lato;
-    text-align:left;
-    max-width:800px;
-    /* margin-right:auto;
-    margin-left:auto; */
-    margin-bottom:1rem;
+    text-align:center;
+    max-width:900px;
+    margin-right:auto;
+    margin-left:auto;
 }
 .osmos-table
 {
@@ -122,24 +116,22 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 .osmos-heading-light
 {
     color:#3d8f8b;
-    font-family:Astrobia;
-    font-weight:bold;
+    font-family:Audiowide;
     font-size:28pt;
 }
 .osmos-subheading-light
 {
     color:#2a6a72;
-    font-family:Astrobia;
-    font-weight:bold;
+    font-family:Audiowide;
     font-size:22pt;
     margin-top:30px;
     margin-left:0.5rem;
 }
 .osmos-text-light
 {
+    font-family:Lato;
     color:#dcbfaa;
-    font-weight:300;
-    font-size:13pt;
+    font-size:1.2rem;
 }
 
 .osmos-separator
@@ -181,15 +173,16 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
     top:1rem;
     left:1.5rem;
     text-decoration:none;
-    color:#cbcbcb77;
+    color:#cbcbcbaa;
     font-size:18pt;
-    border:2px solid #cbcbcb66;
+    border:2px solid #cbcbcb88;
     padding:5px 13px;
     border-radius:40px;
 }
 .home-button:hover
 {
-    color:#cbcbcbbb;
+    color:#cbcbcbee;
+    border:2px solid #3d8f8bdd;
 }
 
   /*FBWPT*/
@@ -214,9 +207,14 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
       
   }
   .fbwpt h3{   
-      color:#426eaf;
+      color:#6c92ca;
       font-family:Averia Gruesa Libre;
       font-weight:bold;
+  }
+  .fbwpt h4{
+    color:#6c92ca;
+    font-family:Averia Libre;
+    text-align: center;
   }
   .fbwpt-text
   {
@@ -231,7 +229,7 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
   .fbwpt-mechanics
   {
       display:flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: space-around;
   }
 .fbwpt-mechanics img{
@@ -250,6 +248,7 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .fbwpt-credits div h3{
     text-align:center;
@@ -266,5 +265,61 @@ box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 {
     text-align:center;
     font-size:1.25rem;
-    color:#87a2cb;
+    color:#b2c2dc;
 }
+.sonova{
+    background:#2d3743;
+    animation: fadeInOnLoad 800ms ease-in-out;
+}
+.sonova-header img{
+    width:100%;
+}
+.sonova-credits
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sonova-credits h3 {
+    
+    font-family:Lato;
+    font-weight:700;
+    color:#f7b17b;
+}
+.sonova-video{
+    width:80%;
+    min-height:400px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.sonova-intro{
+    color:#f0e49e;
+    font-size:1.4rem;
+    font-family:IBM Plex Sans;
+    text-align: center;
+}
+.sonova-intro b{
+    font-weight:700;
+}
+.itch-embed{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+/*IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400
+      Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700
+      IBM+Plex+Serif:wght@300;400;500;600
+      Life+Savers:wght@400;700;800
+      Autour+One
+      Bellota:ital,wght@0,300;0,400;0,700;1,400
+      Milonga
+      Press+Start+2P
+      Salsa
+      Yeon+Sung
+      Arbutus+Slab
+      Averia+Gruesa+Libre
+      Averia+Libre:wght@300;400;700
+      Chelsea+Market
+      Concert+One*/

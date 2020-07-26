@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        Rahul Pegallapati, Game Designer
+        OSMOS Space Simulation Game
     </title>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/game.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=IBM+Plex+Serif:wght@300;400;500;600&family=Life+Savers:wght@400;700;800&family=Autour+One&family=Bellota:ital,wght@0,300;0,400;0,700;1,400&family=Milonga&family=Press+Start+2P&family=Salsa&family=Yeon+Sung&family=Arbutus+Slab&family=Averia+Gruesa+Libre&family=Averia+Libre:wght@300;400;700&family=Chelsea+Market&family=Concert+One&family=Eater&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=IBM+Plex+Serif:wght@300;400;500;600&family=Life+Savers:wght@400;700;800&family=Autour+One&family=Bellota:ital,wght@0,300;0,400;0,700;1,400&family=Milonga&family=Press+Start+2P&family=Salsa&family=Yeon+Sung&family=Arbutus+Slab&family=Averia+Gruesa+Libre&family=Averia+Libre:wght@300;400;700&family=Chelsea+Market&family=Concert+One&family=Eater&family=Audiowide&display=swap"
         rel="stylesheet">
     <script src="https://use.fontawesome.com/9c046ca5d3.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -34,13 +34,11 @@
     <div class="background-container">
         <button onclick="topFunction()" class="osmos-gotop" id="myBtn" title="Go to top"><i
                 class="fa fa-angle-double-up"></i></button>
-        <a href="index.html" class="home-button"></i><i class="fa fa-home"></i></a>
+        <a href="https://gamerowl.in/" class="home-button" title="Go back Home"></i><i class="fa fa-home"></i></a>
         <!--Header-->
         <div class="container-fluid osmos-bg-img osmos-intro-section py-3">
             <div class="container osmos-title my-4" id="top">
                 <h1>OSMOS</h1>
-                <h4 class="my-4" style="color:#777777;text-align:center;font-family:Lato;font-size:1.25rem;">Solo
-                    Project</h4>
             </div>
 
         </div>
@@ -48,16 +46,41 @@
         <div class="container-fluid osmos-intro">
 
 
-            <div class="container">
-                <h2 class="osmos-heading-light" style="color:#27545a!important;font-size:2rem;">Table of Contents</h2>
-                <ul class="osmos-contents">
+            <div class="container custom-container py-4">
+                <h2 class="osmos-heading-light mb-3" style="color:#003f48!important;font-size:2.5rem;">Key Features</h2>
+                <!-- <ul class="osmos-contents">
                     <li><a href="#overview">Overview</a></li>
                     <li><a href="#story">Story and Narrative</a></li>
                     <li><a href="#mechanics">Game Mechanics</a></li>
                     <li><a href="#video">Prototype Video</a></li>
                     <li><a href="#levels">Level Design</a></li>
                     <li><a href="#specifications">Specifications</a></li>
-                </ul>
+                </ul> -->
+
+                <div class="osmos-features">
+                    <div>
+                        <h5>Immersive Experience</h5>
+                    </div>
+                    <div>
+                        <h5>Intuitive Controls</h5>
+                    </div>
+                    <div>
+                        <h5>STEM Learning</h5>
+                    </div>
+                    <div>
+                        <h5>Mechanical challenge</h5>
+                    </div>
+                    <div>
+                        <h5>Scope for VR</h5>
+                    </div>
+                </div>
+            </div>
+            <hr class="osmos-separator">
+            <div class="custom-container pt-5 pb-3" id="video">
+                <iframe style="display:block;margin-left:auto;margin-right:auto;height:70vh;" width="100%"
+                    src="https://www.youtube.com/embed/Uyx5Z8I_DfI?modestbranding=1&rel=0&showinfo=0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
 
         </div>
@@ -65,42 +88,36 @@
         <!--Blue Container 1-->
         <div class="container-fluid osmos-bg-dark">
             <!--Overview container-->
-            <div class="custom-container py-4" id="overview">
-                <h2 class="osmos-heading-light mt-4">Overview</h2>
-                <h3>A satellite repair simulation where players experience being in space while learning about cosmic
-                    phenomena
-                    and outer-space engineering through tons of handcrafted levels.</h3>
+            <div class="custom-container pt-3" id="overview">
+                <h3>An outer space simulation where players learn about Physics and Astronomy while repairing satellites in handcrafted levels.</h3>
             </div>
 
             <!--Story and Narrative-->
             <div class="custom-container py-4" id="story">
                 <h2 class="osmos-heading-light mt-4">Story and Narrative</h2>
-                <p class="osmos-text-light">It's the year 2103 AD and most of Earth's satellite launch programs have
-                    shut down due to the dearth of fossil fuels left.
-                    This meant that neither could new satellites be launched, nor could humans be sent to repair the
-                    existing, and slowly failing ones.</p>
-                <p class="osmos-text-light">
-                    In an attempt to keep the existing satellites functional, Dynaspace Corp. has
-                    developed O.S.M.O.S to repair and maintain satellites in orbit.
+                <p class="osmos-text-light">It's 2103 AD and there's no fossil fuels left on Earth.
+                    New satellites can't be launched, neither could humans be sent to repair the ones in orbit. Dynaspace Corp. offers to save whatever's left by
+                    developing the innovative <b>O.S.M.O.S.</b>
                 </p>
 
                 <!-- <h2 class="osmos-heading-light">O.S.M.O.S</h2> -->
-                <div class="para-half">
-                    <p class="osmos-text-light"><b>On-Orbit Satellite Maintenance and Operation Spacecraft</b>
-                        (O.S.M.O.S)
-                        is an innovative
-                        uncrewed spacecraft used to service, repair and maintain satellites</p>
-
-                    <img src="img/osmos_side_bp3.png" style="display:block;width:60%;" />
-                </div>
+                
                 <div class="img-inline"><img src="img/osmos_front_bp_glow2.png" style="width:100%;" /></div>
-                <p class="osmos-text-light"><b>Equipped with robotic arms,
-                        solar panels, aux power and
-                        a music
-                        player to warm things up for a stranded astronaut!</b></p>
-                <p class="osmos-text-light"><b>It is the player's job to remotely operate OSMOS to carry out each
+                <div class="para-half">
+                    <p class="osmos-text-light mb-5"><b>On-Orbit Satellite Maintenance and Operation Spacecraft</b>
+                        is
+                        uncrewed spacecraft used to repair and maintain satellites in orbit</p>
+                    <p class="osmos-text-light mb-0" style="font-weight:300; font-size:0.9rem;"><i>"Equipped with a music
+                            player to warm things up for a rescued Martian!"</i></p>
+                            <p class="osmos-text-light text-right" style="font-weight:300; font-size:0.9rem;"><i>-Dynaspace Corp.</i></p>
+
+                </div>
+                
+
+                <p class="osmos-text-light">It is the player's job to remotely operate OSMOS to carry out each
                         task they are given. As the levels progress, some secrets are uncovered in the dark of space and
-                        a macabre story unfolds.</b>
+                        a macabre story unfolds.
+                        
                 </p>
             </div>
             <hr class="osmos-separator">
@@ -109,10 +126,8 @@
             <div class="custom-container pt-3 mb-5" id="mechanics">
                 <h2 class="osmos-heading-light mt-4">Game Mechanics</h2>
                 <p class="osmos-text-light">
-                    The mechanics give the player a realistic experience, with navigation being as close
-                    as possible to real physics in outer-space. The controls are intuitive and let the player either
-                    cruise
-                    peacefully across the stratosphere, or cautiously dock into other satellites with no discursion.
+                    Realistic physics and intuitive controls let the player cruise across orbits or cautiously dock into
+                    satellites without discursion.
                 </p>
                 <p class="osmos-text-light">
                     There are two modes the player can switch between. <b><i>Flight</i></b> mode and
@@ -126,18 +141,15 @@
                 <div class="row custom-container">
                     <div class="col-md-8 col-sm-12 px-0">
                         <p class="osmos-text-light">
-                            OSMOS is equipped with thrusters in different axes to allow the player to manoeuvre it
-                            in orbit.
+                            OSMOS is equipped with boosters in X,Y and Z axes to allow the player to thrust forward or
+                            slow down (retrograde burn).
                         </p>
                         <p class="osmos-text-light">
-                            In zero gravity inertia is maximum. The thrusters can be used for retrograde bursts to slow
-                            down movement.
+                            OSMOS can be rotated freely using the mouse or the analog stick.
                         </p>
                         <p class="osmos-text-light">
-                            Player can also rotate OSMOS freely using the mouse or the analog stick.
-                        </p>
-                        <p class="osmos-text-light">
-                            To avoid motion sickness, players may stop OSMOS's movement by pressing the <i>Stabilize</i>
+                            To avoid motion sickness, players may stop OSMOS's movement by pressing the <i
+                                style="color:#ebe0d8;"><b>Stabilize</b></i>
                             button.
                         </p>
 
@@ -155,8 +167,7 @@
                         Repair mode uses the same controls as Flight mode for different functions.
                     </p>
                     <p class="osmos-text-light">
-                        Once in the Repair mode, player can control the two mechanical arms and perform the required
-                        actions.
+                        Once in the Repair mode, player gets access to the two mechanical arms.
                     </p>
                 </div>
                 <hr class="invis-separator">
@@ -177,7 +188,7 @@
             <hr class="osmos-separator mb-4">
         </div>
 
-        <!--White container 2-->
+        <!-- White container 2
         <div class="container-fluid osmos-intro">
             <div class="custom-container" id="video">
                 <h2 class="osmos-heading-light" style="color:#10131b;">Prototype Video</h2>
@@ -187,42 +198,37 @@
                     allowfullscreen></iframe>
             </div>
 
-        </div>
+        </div> -->
 
         <!--Blue container 2-->
         <div class="container-fluid osmos-bg-dark">
 
             <div class="custom-container py-4" id="levels">
                 <h2 class="osmos-heading-light mt-4">Level Design</h2>
-                <p class="osmos-text-light">Level progression will go hand-in-hand with mechanical progression and the
-                    story.</p>
-                <p class="osmos-text-light">At each successive level, either one or more of the following things will
-                    happen
-                </p>
+                <p class="osmos-text-light">Level progression in OSMOS goes hand-in-hand with mechanical progression and the
+                    story. Main elements of progression are</p>
                 <ul class="osmos-text-light mb-5" style="list-style-type:none;">
-                    <li><i class="fa fa-star mr-3"></i> Features unlocked for OSMOS</li>
-                    <li><i class="fa fa-star mr-3"></i> New type of task</li>
-                    <li><i class="fa fa-star mr-3"></i> Story fragment unlocked</li>
-                    <li><i class="fa fa-star mr-3"></i> Complexity of task is increased</li>
+                    <li><i class="fa fa-star mr-3"></i> OSMOS abilities</li>
+                    <li><i class="fa fa-star mr-3"></i> New Tasks</li>
+                    <li><i class="fa fa-star mr-3"></i> Story fragments</li>
+                    <li><i class="fa fa-star mr-3"></i> Complexity of Tasks</li>
                 </ul>
 
                 <p class="osmos-text-light">
                     Each mission includes a combination of smaller tasks.
-                    Tasks range in difficulty in terms of mechanical requirement. Here are some of the tasks in
-                    increasing order of difficulty:
+                    Tasks include:
                 </p>
-                <ul class="osmos-text-light" style="list-style-type: none;">
-                    <li><i class="fa fa-rocket mr-3"></i> Navigation (Point A to Point B)</li>
-                    <li><i class="fa fa-bolt mr-4"></i> Electrical Repair</li>
-                    <li><i class="fa fa-wrench mr-3"></i> Mechanical Repair</li>
+                <ul class="osmos-text-light" style="list-style-type: none;font-weight:400;">
+                    <li><i class="fa fa-rocket mr-3"></i> Navigation (A to B)</li>
+                    <li><i class="fa fa-wrench mr-3"></i> Electrical/Mechanical repair</li>
                     <li><i class="fa fa-eye mr-3"></i> Orbital Surveillance</li>
                     <li><i class="fa fa-camera mr-3"></i> Photographing space and the planet</li>
                     <li><i class="fa fa-cogs mr-3"></i> Scavenging for parts</li>
-                    <li><i class="fa fa-heartbeat mr-3"></i> Occasional human rescue</li>
+                    <li><i class="fa fa-heartbeat mr-3"></i> Occasional alien rescue</li>
                 </ul>
             </div>
 
-            <div class="custom-container pb-4">
+            <div class="custom-container pb-3">
                 <h2 class="osmos-heading-light mt-4" id="specifications">Specifications</h2>
                 <table class="osmos-table table">
                     <tr>
@@ -239,7 +245,7 @@
                     </tr>
                 </table>
             </div>
-
+            <img src="img/osmos_side_bp3.png" style="display:block;max-height:150px;margin-left:auto;margin-right:auto; margin-bottom:20px;" />
         </div>
 
         <!--Footer-->

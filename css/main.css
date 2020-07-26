@@ -13,22 +13,20 @@
 {
     background:#6e6461;
     color:#fefcee;
-    display:table-cell;
-    vertical-align: middle;
-    width:100vw;;
+    width:100%;
+}
+.section-intro-bg .row{
+    align-items: center;
 }
 .home-header
 {
-    display:flex;
-    position:absolute;
-    bottom:-100px;
     opacity:0;
-    left:0px;
+    display:flex;
     justify-content: center;
     width:100%;
     padding:15px;
     flex-wrap: wrap;
-    animation:flyTopOnLoad 700ms ease-in-out 2000ms forwards;
+    animation:fadeInOnLoad 700ms ease-in-out 500ms forwards;
 }
 .home-header a{
     text-decoration:none;
@@ -74,35 +72,40 @@
     display: block;
     margin-left:auto;
     margin-right:auto;
-    position: relative;
-    bottom:30px;
 }
 
 .owl-container
 {
+    display:inline-block;
+    vertical-align:middle;
     opacity:0;
-    animation:fadeInOnLoad 800ms ease-in-out 0ms forwards;
+    animation:fadeInOnLoad 600ms ease-in-out 0ms forwards;
+}
+.intro-container
+{
+    display: inline-block;
+    vertical-align: middle;
 }
 .intro-container h1,h4,h6
 {
+    display:block;
     word-wrap: normal;
-    margin-bottom:1.5rem;
     font-family:Chelsea Market;
 }
 .intro-container h1
 {
     opacity:0;
-    animation:fadeInOnLoad 500ms ease-in-out 400ms forwards;
+    animation:fadeInOnLoad 600ms ease-in-out 100ms forwards;
 }
 .intro-container h4 .delay-text-0
 {
     opacity:0;
-    animation:fadeInOnLoad 500ms ease-in-out 800ms forwards;
+    animation:fadeInOnLoad 600ms ease-in-out 300ms forwards;
 }
 .intro-container h4 .delay-text
 {
     opacity:0;
-    animation:fadeInOnLoad 500ms ease-in-out 1200ms forwards;
+    animation:fadeInOnLoad 500ms ease-in-out 600ms forwards;
 }
 .section-gallery{
     background:#af977e;
@@ -113,12 +116,12 @@ box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.75);
 .section-gallery h2{
     color:#251c1b;
 }
-
 .pf-row {
     /* margin-top:calc(50vh - 200px); */
     /*makes the gallery section start from half way. remove once title and second row are added*/
     padding:1.5rem;
     margin-top:0;
+    justify-content: center;
 }
 
 .pf-item
@@ -357,7 +360,7 @@ box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
 
 .full-height
 {
-    height:100vh !important;
+    height:75vh !important;
 }
 .margin-half
 {
