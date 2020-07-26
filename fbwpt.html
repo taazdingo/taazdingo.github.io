@@ -31,6 +31,8 @@
 </head>
 
 <body class="fbwpt">
+    <button onclick="topFunction()" class="fbwpt-gotop" id="myBtn" title="Go to top"><i
+        class="fa fa-arrow-circle-up"></i></button>
     <a href="https://gamerowl.in/" class="home-button" title="Go back Home"></i><i class="fa fa-home"></i></a>
     <div class="custom-container px-0 pb-5 mb-5" style="background:#112238;">
         <div class="container-fluid px-0 mb-5">
@@ -61,7 +63,7 @@
         <div class="container-fluid px-0">
             <div class="custom-container px-0">
                 <h3 class="px-4 mt-5 mb-4">Core Mechanics</h3>
-                <div class="fbwpt-mechanics pb-5">
+                <div class="fbwpt-mechanics">
                     <div>
                         <img src="img/run-right.gif" />
                         <h5>Run</h5>
@@ -90,7 +92,7 @@
 
         <div class="container-fluid px-0">
             <div class="custom-container px-0">
-                <h3 class="px-4 mt-5 mb-4">Boss Order System</h3>
+                <h3 class="px-4 mt-5 mb-4">The Boss</h3>
                 <!-- <i class="fa fa-cutlery mr-3"></i> -->
                 <div class="custom-container px-5">
                     <p class="fbwpt-text">
@@ -130,7 +132,13 @@
                         <span style="color:darkorange"><b>Angry State: </b></span> One order has missed. (Order time elapsed before fruit could be thrown) <img src="img/boss-angry.gif" class="ml-3"/>
                     </p>
                     <p class="fbwpt-text">
-                        <span style="color:darkorange"><b>Punishing State: </b></span> Another consecutive order missed. <img src="img/boss-roar.gif" class="ml-3"/>
+                        <span style="color:darkorange"><b>Punishing State: </b></span> Another consecutive order missed. <img src="img/boss-roar.gif" class="ml-3" style="-webkit-filter: drop-shadow(2px 2px 0 #9a1f1fee)
+                        drop-shadow(-1px 1px 0 #9a1f1fee);
+                        filter: drop-shadow(2px 2px 0 #9a1f1fee)
+                        drop-shadow(-1px 1px 0 #9a1f1fee)"/>
+                    </p>
+                    <p class="fbwpt-text">
+                        This is when the Boss gets enraged and starts raining down meatballs. The players may die and the plants may get destroyed.
                     </p>
                 </div>
             </div>
@@ -170,4 +178,26 @@
         </div>
 
     </div>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
