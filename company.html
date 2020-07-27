@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rahul's Home Page">
+    <meta name="keywords" content="Rahul, Game, Design, Portfolio">
+    <meta name="author" content="Rahul M Pegallapati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Hold My Company, Alexa Game
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=IBM+Plex+Serif:wght@300;400;500;600&family=Life+Savers:wght@400;700;800&family=Autour+One&family=Bellota:ital,wght@0,300;0,400;0,700;1,400&family=Milonga&family=Press+Start+2P&family=Salsa&family=Yeon+Sung&family=Arbutus+Slab&family=Averia+Gruesa+Libre&family=Averia+Libre:wght@300;400;700&family=Chelsea+Market&family=Concert+One&family=Eater&family=Caveat+Brush&display=swap"
+        rel="stylesheet">
+    <script src="https://use.fontawesome.com/9c046ca5d3.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173234110-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173234110-1');
+    </script>
+
+</head>
+
+<body class="company pb-0">
+
+    <div class="main-container-bg custom-container">
+        <hr class="company-separator mb-4">
+        <img src="img/company-logo.png">
+        
+        <div class="company-page rotate-right py-5 mb-5">
+            <h3>Overview</h3>
+            <p>Hold my company is a voice based strategy game powered by Alexa where player takes up the role of a CTO
+                in an IT firm.
+                Player needs to manage their resources to lead the company to profits.</p>
+            <p>They need to make decisions and accordingly develop their personality in to a unique
+                character in game.</p>
+            <h3 class="mt-5">The Approach</h3>
+
+            <h4>Interaction</h4>
+            <p>Voice User Interfaces (<b>VUI</b>,) although are not new, haven't seen significant
+                growth in the past in interactivity. Only in the last few years, through home assistant devices like
+                <b>Google Home</b> and <b>Amazon Echo</b>, the boundaries have increased many folds and
+                allowed developers to create highly interactive voice based games.</p>
+            <h4>Amazon Alexa</h4>
+            
+            <p>We chose <b>Alexa Skill Kit</b> (ASK) for various advantages tied to it:</p>
+            <ul>
+                <li>Cloud based invocation</li>
+                <li>Huge collection of APIs</li>
+                <li>Efficient Automatic Speech Recognition (ASR) and Natural Language Understanding (NLU)</li>
+                <li>Multimodal input (Phone, Echo Buttons, Echo Show,etc..)</li>
+                <li>Native and Custom Voice Interfaces</li>
+                <li>In-skill purchasing</li>
+                <li>Flexible back end support</li>
+            </ul>
+            <img src="img/alexa-archi0.png">
+        </div>
+        
+        <div class="company-page rotate-left page-right py-5">
+            <h3>Mechanics</h3>
+            <p>Alexa is inherently a turn-based form of interaction as every user input has to be processed and sent to your skill back end, which then responds. Broadly, there are four different ways an interaction can happen</p>
+            <ul>
+                <li>Simple “Yes” or “No”</li>
+                <li>Repetitive Reprompt</li>
+                <li>Fixed list of instructions</li>
+                <li>Free-Form, Contextualized Input</li>
+            </ul>
+            <h4>Voice</h4>
+            <img src="img/alexa-ocean.png">
+        </div>
+
+        <!-- <div class="company-page rotate-left py-5">
+
+        </div> -->
+        
+        <hr class="company-separator">
+    </div>
+
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>

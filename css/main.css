@@ -26,7 +26,7 @@
     width:100%;
     padding:15px;
     flex-wrap: wrap;
-    animation:fadeInOnLoad 700ms ease-in-out 500ms forwards;
+    animation:fadeInOnLoad 700ms ease-in-out 600ms forwards;
 }
 .home-header a{
     text-decoration:none;
@@ -79,7 +79,7 @@
     display:inline-block;
     vertical-align:middle;
     opacity:0;
-    animation:fadeInOnLoad 600ms ease-in-out 0ms forwards;
+    animation:fadeInOnLoad 500ms ease-in-out 0ms forwards;
 }
 .intro-container
 {
@@ -95,12 +95,12 @@
 .intro-container h1
 {
     opacity:0;
-    animation:fadeInOnLoad 600ms ease-in-out 100ms forwards;
+    animation:fadeInOnLoad 500ms ease-in-out 200ms forwards;
 }
 .intro-container h4 .delay-text-0
 {
     opacity:0;
-    animation:fadeInOnLoad 600ms ease-in-out 300ms forwards;
+    animation:fadeInOnLoad 500ms ease-in-out 400ms forwards;
 }
 .intro-container h4 .delay-text
 {
@@ -119,18 +119,21 @@ box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.75);
 .pf-row {
     /* margin-top:calc(50vh - 200px); */
     /*makes the gallery section start from half way. remove once title and second row are added*/
-    padding:1.5rem;
+    opacity:0;
+    padding:1rem 2rem!important;
     margin-top:0;
     justify-content: center;
+    animation: fadeInOnLoad 500ms ease-in-out 800ms forwards;
 }
 
 .pf-item
 {
     background-color:transparent;
     /* border: 1px solid black; */
-    height:400px;
+    height:300px;
     margin-bottom:20px;
-    
+    padding-left:20px;
+    padding-right:20px;
 }
 
 
@@ -138,7 +141,7 @@ box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.75);
 {
     height:100%;
     /* width:calc(100% - 30px); */
-    width:calc(100% - 30px);
+    width:calc(100% - 40px);
     object-fit: cover;
     object-position: top;
     position:absolute;
@@ -146,17 +149,19 @@ box-shadow: inset 0px 5px 15px 0px rgba(0,0,0,0.75);
     margin-left:auto;
     margin-right:auto;
     z-index:1; 
+    /* border: 10px ridge #301f10; */
+    border-radius:15px;
     /* outline:#ffffffbb solid 2px; */
     transition:all 150ms ease-in-out 0ms;
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);  
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 }
 
 .pf-item-veil
 {
     /* width:calc(100% - 30px); */
-    width:calc(100% - 30px);
+    width:calc(100% - 40px);
     height:100%;
     position:absolute;
     margin-left:auto;
@@ -164,22 +169,23 @@ box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
     background-image:linear-gradient(#00000000, #000000ff);
     opacity:0%;
     z-index:4;
+    border-radius:15px;
     transition:all 150ms ease-in-out 0s;
 }
 .pf-item-trigger:hover .pf-item-veil
 {
-    opacity:95%;
-    transform:scale(1.04);
+    opacity:100%;
+    transform:scale(1.1);
 }
 .pf-item-trigger:hover .pf-item-img {
-    transform: scale(1.04);
+    transform: scale(1.1);
 }
 
 .pf-item-desc {
-    width:calc(100% - 30px);
+    width:calc(100% - 40px);
     position:absolute;
-    bottom:20px;
-    left:20px;
+    bottom:0px;
+    left:10px;
     padding-left:20px;
     padding-right:20px;
     z-index:5;
@@ -187,16 +193,24 @@ box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
     transition:opacity 200ms linear 0ms;
 }
 .pf-item-desc h4 {
-    color:#dedede;
+    color:#ededed;
+    font-family:Lato;
+    font-size:1.2rem;
+    font-weight:400;
 }
 .pf-item-trigger:hover .pf-item-desc
 {
     opacity:100%;
 }
+.sub-desc
+{
+    font-size:1rem!important;
+    margin-bottom:0.25rem!important;
+}
 
 .clickable a {
     position:absolute;
-    width:calc(100% - 30px);
+    width:calc(100% - 40px);
     height:100%;
     z-index:6;
 }
